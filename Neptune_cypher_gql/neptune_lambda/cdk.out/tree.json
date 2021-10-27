@@ -332,7 +332,7 @@
                     "Ref": "VpcIngressSubnet2Subnet0EF3AA18"
                   }
                 ],
-                "dbSubnetGroupName": "mySubnetGroup"
+                "dbSubnetGroupName": "mysubnetgroup"
               }
             },
             "constructInfo": {
@@ -347,7 +347,7 @@
               "aws:cdk:cloudformation:type": "AWS::Neptune::DBCluster",
               "aws:cdk:cloudformation:props": {
                 "dbClusterIdentifier": "myDbCluster",
-                "dbSubnetGroupName": "mySubnetGroup",
+                "dbSubnetGroupName": "mysubnetgroup",
                 "vpcSecurityGroupIds": [
                   {
                     "Fn::GetAtt": [
@@ -548,7 +548,7 @@
                       }
                     },
                     "handler": "index.handler",
-                    "runtime": "nodejs14.x",
+                    "runtime": "nodejs10.x",
                     "vpcConfig": {
                       "subnetIds": [
                         {

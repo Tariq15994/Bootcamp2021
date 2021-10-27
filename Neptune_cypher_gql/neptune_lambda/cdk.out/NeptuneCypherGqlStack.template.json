@@ -212,7 +212,7 @@
             "Ref": "VpcIngressSubnet2Subnet0EF3AA18"
           }
         ],
-        "DBSubnetGroupName": "mySubnetGroup"
+        "DBSubnetGroupName": "mysubnetgroup"
       },
       "Metadata": {
         "aws:cdk:path": "NeptuneCypherGqlStack/neptuneSubnetGroup"
@@ -222,7 +222,7 @@
       "Type": "AWS::Neptune::DBCluster",
       "Properties": {
         "DBClusterIdentifier": "myDbCluster",
-        "DBSubnetGroupName": "mySubnetGroup",
+        "DBSubnetGroupName": "mysubnetgroup",
         "VpcSecurityGroupIds": [
           {
             "Fn::GetAtt": [
@@ -364,7 +364,7 @@
           }
         },
         "Handler": "index.handler",
-        "Runtime": "nodejs14.x",
+        "Runtime": "nodejs10.x",
         "VpcConfig": {
           "SecurityGroupIds": [
             {
