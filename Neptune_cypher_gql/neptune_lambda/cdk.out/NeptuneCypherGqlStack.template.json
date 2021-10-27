@@ -1,0 +1,1018 @@
+{
+  "Resources": {
+    "Vpc8378EB38": {
+      "Type": "AWS::EC2::VPC",
+      "Properties": {
+        "CidrBlock": "10.0.0.0/16",
+        "EnableDnsHostnames": true,
+        "EnableDnsSupport": true,
+        "InstanceTenancy": "default",
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "NeptuneCypherGqlStack/Vpc"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "NeptuneCypherGqlStack/Vpc/Resource"
+      }
+    },
+    "VpcIngressSubnet1SubnetBB860652": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "CidrBlock": "10.0.0.0/23",
+        "VpcId": {
+          "Ref": "Vpc8378EB38"
+        },
+        "AvailabilityZone": {
+          "Fn::Select": [
+            0,
+            {
+              "Fn::GetAZs": ""
+            }
+          ]
+        },
+        "MapPublicIpOnLaunch": false,
+        "Tags": [
+          {
+            "Key": "aws-cdk:subnet-name",
+            "Value": "Ingress"
+          },
+          {
+            "Key": "aws-cdk:subnet-type",
+            "Value": "Isolated"
+          },
+          {
+            "Key": "Name",
+            "Value": "NeptuneCypherGqlStack/Vpc/IngressSubnet1"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "NeptuneCypherGqlStack/Vpc/IngressSubnet1/Subnet"
+      }
+    },
+    "VpcIngressSubnet1RouteTable4A2F04D4": {
+      "Type": "AWS::EC2::RouteTable",
+      "Properties": {
+        "VpcId": {
+          "Ref": "Vpc8378EB38"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "NeptuneCypherGqlStack/Vpc/IngressSubnet1"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "NeptuneCypherGqlStack/Vpc/IngressSubnet1/RouteTable"
+      }
+    },
+    "VpcIngressSubnet1RouteTableAssociationB783F1CD": {
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "VpcIngressSubnet1RouteTable4A2F04D4"
+        },
+        "SubnetId": {
+          "Ref": "VpcIngressSubnet1SubnetBB860652"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "NeptuneCypherGqlStack/Vpc/IngressSubnet1/RouteTableAssociation"
+      }
+    },
+    "VpcIngressSubnet2Subnet0EF3AA18": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "CidrBlock": "10.0.2.0/23",
+        "VpcId": {
+          "Ref": "Vpc8378EB38"
+        },
+        "AvailabilityZone": {
+          "Fn::Select": [
+            1,
+            {
+              "Fn::GetAZs": ""
+            }
+          ]
+        },
+        "MapPublicIpOnLaunch": false,
+        "Tags": [
+          {
+            "Key": "aws-cdk:subnet-name",
+            "Value": "Ingress"
+          },
+          {
+            "Key": "aws-cdk:subnet-type",
+            "Value": "Isolated"
+          },
+          {
+            "Key": "Name",
+            "Value": "NeptuneCypherGqlStack/Vpc/IngressSubnet2"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "NeptuneCypherGqlStack/Vpc/IngressSubnet2/Subnet"
+      }
+    },
+    "VpcIngressSubnet2RouteTableF8479FEF": {
+      "Type": "AWS::EC2::RouteTable",
+      "Properties": {
+        "VpcId": {
+          "Ref": "Vpc8378EB38"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "NeptuneCypherGqlStack/Vpc/IngressSubnet2"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "NeptuneCypherGqlStack/Vpc/IngressSubnet2/RouteTable"
+      }
+    },
+    "VpcIngressSubnet2RouteTableAssociationC780BF1D": {
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "VpcIngressSubnet2RouteTableF8479FEF"
+        },
+        "SubnetId": {
+          "Ref": "VpcIngressSubnet2Subnet0EF3AA18"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "NeptuneCypherGqlStack/Vpc/IngressSubnet2/RouteTableAssociation"
+      }
+    },
+    "mySecurityGroup10F5D9342": {
+      "Type": "AWS::EC2::SecurityGroup",
+      "Properties": {
+        "GroupDescription": "security group 1",
+        "GroupName": "mySecurityGroup",
+        "SecurityGroupEgress": [
+          {
+            "CidrIp": "0.0.0.0/0",
+            "Description": "Allow all outbound traffic by default",
+            "IpProtocol": "-1"
+          }
+        ],
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "mySecurityGroup"
+          }
+        ],
+        "VpcId": {
+          "Ref": "Vpc8378EB38"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "NeptuneCypherGqlStack/mySecurityGroup1/Resource"
+      }
+    },
+    "mySecurityGroup1fromNeptuneCypherGqlStackmySecurityGroup1E8BE46628182EC887023": {
+      "Type": "AWS::EC2::SecurityGroupIngress",
+      "Properties": {
+        "IpProtocol": "tcp",
+        "Description": "MyRule",
+        "FromPort": 8182,
+        "GroupId": {
+          "Fn::GetAtt": [
+            "mySecurityGroup10F5D9342",
+            "GroupId"
+          ]
+        },
+        "SourceSecurityGroupId": {
+          "Fn::GetAtt": [
+            "mySecurityGroup10F5D9342",
+            "GroupId"
+          ]
+        },
+        "ToPort": 8182
+      },
+      "Metadata": {
+        "aws:cdk:path": "NeptuneCypherGqlStack/mySecurityGroup1/from NeptuneCypherGqlStackmySecurityGroup1E8BE4662:8182"
+      }
+    },
+    "neptuneSubnetGroup": {
+      "Type": "AWS::Neptune::DBSubnetGroup",
+      "Properties": {
+        "DBSubnetGroupDescription": "My Subnet",
+        "SubnetIds": [
+          {
+            "Ref": "VpcIngressSubnet1SubnetBB860652"
+          },
+          {
+            "Ref": "VpcIngressSubnet2Subnet0EF3AA18"
+          }
+        ],
+        "DBSubnetGroupName": "mySubnetGroup"
+      },
+      "Metadata": {
+        "aws:cdk:path": "NeptuneCypherGqlStack/neptuneSubnetGroup"
+      }
+    },
+    "MyCluster": {
+      "Type": "AWS::Neptune::DBCluster",
+      "Properties": {
+        "DBClusterIdentifier": "myDbCluster",
+        "DBSubnetGroupName": "mySubnetGroup",
+        "VpcSecurityGroupIds": [
+          {
+            "Fn::GetAtt": [
+              "mySecurityGroup10F5D9342",
+              "GroupId"
+            ]
+          }
+        ]
+      },
+      "DependsOn": [
+        "neptuneSubnetGroup"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "NeptuneCypherGqlStack/MyCluster"
+      }
+    },
+    "myinstance": {
+      "Type": "AWS::Neptune::DBInstance",
+      "Properties": {
+        "DBInstanceClass": "db.t3.medium",
+        "AvailabilityZone": {
+          "Fn::Select": [
+            0,
+            {
+              "Fn::GetAZs": ""
+            }
+          ]
+        },
+        "DBClusterIdentifier": "myDbCluster"
+      },
+      "DependsOn": [
+        "MyCluster"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "NeptuneCypherGqlStack/myinstance"
+      }
+    },
+    "LambdaServiceRoleA8ED4D3B": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+              ]
+            ]
+          },
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/service-role/AWSLambdaVPCAccessExecutionRole"
+              ]
+            ]
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "NeptuneCypherGqlStack/Lambda/ServiceRole/Resource"
+      }
+    },
+    "LambdaD247545B": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Code": {
+          "S3Bucket": {
+            "Ref": "AssetParameters052f399fa77385d10e43b917baaf7ee3fa8d01fb2f9800314a506923fe35d56bS3Bucket43067A99"
+          },
+          "S3Key": {
+            "Fn::Join": [
+              "",
+              [
+                {
+                  "Fn::Select": [
+                    0,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParameters052f399fa77385d10e43b917baaf7ee3fa8d01fb2f9800314a506923fe35d56bS3VersionKeyE006DE8E"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Fn::Select": [
+                    1,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParameters052f399fa77385d10e43b917baaf7ee3fa8d01fb2f9800314a506923fe35d56bS3VersionKeyE006DE8E"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        },
+        "Role": {
+          "Fn::GetAtt": [
+            "LambdaServiceRoleA8ED4D3B",
+            "Arn"
+          ]
+        },
+        "Environment": {
+          "Variables": {
+            "NEPTUNE_ENDPOINT": {
+              "Fn::GetAtt": [
+                "MyCluster",
+                "Endpoint"
+              ]
+            }
+          }
+        },
+        "Handler": "index.handler",
+        "Runtime": "nodejs14.x",
+        "VpcConfig": {
+          "SecurityGroupIds": [
+            {
+              "Fn::GetAtt": [
+                "mySecurityGroup10F5D9342",
+                "GroupId"
+              ]
+            }
+          ],
+          "SubnetIds": [
+            {
+              "Ref": "VpcIngressSubnet1SubnetBB860652"
+            },
+            {
+              "Ref": "VpcIngressSubnet2Subnet0EF3AA18"
+            }
+          ]
+        }
+      },
+      "DependsOn": [
+        "LambdaServiceRoleA8ED4D3B"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "NeptuneCypherGqlStack/Lambda/Resource",
+        "aws:asset:path": "asset.052f399fa77385d10e43b917baaf7ee3fa8d01fb2f9800314a506923fe35d56b",
+        "aws:asset:property": "Code"
+      }
+    },
+    "apiC8550315": {
+      "Type": "AWS::ApiGateway::RestApi",
+      "Properties": {
+        "Name": "api"
+      },
+      "Metadata": {
+        "aws:cdk:path": "NeptuneCypherGqlStack/api/Resource"
+      }
+    },
+    "apiCloudWatchRoleAC81D93E": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "apigateway.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/service-role/AmazonAPIGatewayPushToCloudWatchLogs"
+              ]
+            ]
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "NeptuneCypherGqlStack/api/CloudWatchRole/Resource"
+      }
+    },
+    "apiAccount57E28B43": {
+      "Type": "AWS::ApiGateway::Account",
+      "Properties": {
+        "CloudWatchRoleArn": {
+          "Fn::GetAtt": [
+            "apiCloudWatchRoleAC81D93E",
+            "Arn"
+          ]
+        }
+      },
+      "DependsOn": [
+        "apiC8550315"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "NeptuneCypherGqlStack/api/Account"
+      }
+    },
+    "apiDeployment149F129476687e3593717387642ac8c19d70e9db": {
+      "Type": "AWS::ApiGateway::Deployment",
+      "Properties": {
+        "RestApiId": {
+          "Ref": "apiC8550315"
+        },
+        "Description": "Automatically created by the RestApi construct"
+      },
+      "DependsOn": [
+        "apiproxyANY7F13F09C",
+        "apiproxy4EA44110",
+        "apiANYB3DF8C3C"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "NeptuneCypherGqlStack/api/Deployment/Resource"
+      }
+    },
+    "apiDeploymentStageprod896C8101": {
+      "Type": "AWS::ApiGateway::Stage",
+      "Properties": {
+        "RestApiId": {
+          "Ref": "apiC8550315"
+        },
+        "DeploymentId": {
+          "Ref": "apiDeployment149F129476687e3593717387642ac8c19d70e9db"
+        },
+        "StageName": "prod"
+      },
+      "Metadata": {
+        "aws:cdk:path": "NeptuneCypherGqlStack/api/DeploymentStage.prod/Resource"
+      }
+    },
+    "apiproxy4EA44110": {
+      "Type": "AWS::ApiGateway::Resource",
+      "Properties": {
+        "ParentId": {
+          "Fn::GetAtt": [
+            "apiC8550315",
+            "RootResourceId"
+          ]
+        },
+        "PathPart": "{proxy+}",
+        "RestApiId": {
+          "Ref": "apiC8550315"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "NeptuneCypherGqlStack/api/Default/{proxy+}/Resource"
+      }
+    },
+    "apiproxyANYApiPermissionNeptuneCypherGqlStackapi6429C549ANYproxy4EA572B3": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "LambdaD247545B",
+            "Arn"
+          ]
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:",
+              {
+                "Ref": "AWS::Region"
+              },
+              ":",
+              {
+                "Ref": "AWS::AccountId"
+              },
+              ":",
+              {
+                "Ref": "apiC8550315"
+              },
+              "/",
+              {
+                "Ref": "apiDeploymentStageprod896C8101"
+              },
+              "/*/*"
+            ]
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "NeptuneCypherGqlStack/api/Default/{proxy+}/ANY/ApiPermission.NeptuneCypherGqlStackapi6429C549.ANY..{proxy+}"
+      }
+    },
+    "apiproxyANYApiPermissionTestNeptuneCypherGqlStackapi6429C549ANYproxyE3FC74E9": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "LambdaD247545B",
+            "Arn"
+          ]
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:",
+              {
+                "Ref": "AWS::Region"
+              },
+              ":",
+              {
+                "Ref": "AWS::AccountId"
+              },
+              ":",
+              {
+                "Ref": "apiC8550315"
+              },
+              "/test-invoke-stage/*/*"
+            ]
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "NeptuneCypherGqlStack/api/Default/{proxy+}/ANY/ApiPermission.Test.NeptuneCypherGqlStackapi6429C549.ANY..{proxy+}"
+      }
+    },
+    "apiproxyANY7F13F09C": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "HttpMethod": "ANY",
+        "ResourceId": {
+          "Ref": "apiproxy4EA44110"
+        },
+        "RestApiId": {
+          "Ref": "apiC8550315"
+        },
+        "AuthorizationType": "NONE",
+        "Integration": {
+          "IntegrationHttpMethod": "POST",
+          "Type": "AWS_PROXY",
+          "Uri": {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":apigateway:",
+                {
+                  "Ref": "AWS::Region"
+                },
+                ":lambda:path/2015-03-31/functions/",
+                {
+                  "Fn::GetAtt": [
+                    "LambdaD247545B",
+                    "Arn"
+                  ]
+                },
+                "/invocations"
+              ]
+            ]
+          }
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "NeptuneCypherGqlStack/api/Default/{proxy+}/ANY/Resource"
+      }
+    },
+    "apiANYApiPermissionNeptuneCypherGqlStackapi6429C549ANY09D304DB": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "LambdaD247545B",
+            "Arn"
+          ]
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:",
+              {
+                "Ref": "AWS::Region"
+              },
+              ":",
+              {
+                "Ref": "AWS::AccountId"
+              },
+              ":",
+              {
+                "Ref": "apiC8550315"
+              },
+              "/",
+              {
+                "Ref": "apiDeploymentStageprod896C8101"
+              },
+              "/*/"
+            ]
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "NeptuneCypherGqlStack/api/Default/ANY/ApiPermission.NeptuneCypherGqlStackapi6429C549.ANY.."
+      }
+    },
+    "apiANYApiPermissionTestNeptuneCypherGqlStackapi6429C549ANYF3CAA0B8": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "Action": "lambda:InvokeFunction",
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "LambdaD247545B",
+            "Arn"
+          ]
+        },
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:",
+              {
+                "Ref": "AWS::Region"
+              },
+              ":",
+              {
+                "Ref": "AWS::AccountId"
+              },
+              ":",
+              {
+                "Ref": "apiC8550315"
+              },
+              "/test-invoke-stage/*/"
+            ]
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "NeptuneCypherGqlStack/api/Default/ANY/ApiPermission.Test.NeptuneCypherGqlStackapi6429C549.ANY.."
+      }
+    },
+    "apiANYB3DF8C3C": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "HttpMethod": "ANY",
+        "ResourceId": {
+          "Fn::GetAtt": [
+            "apiC8550315",
+            "RootResourceId"
+          ]
+        },
+        "RestApiId": {
+          "Ref": "apiC8550315"
+        },
+        "AuthorizationType": "NONE",
+        "Integration": {
+          "IntegrationHttpMethod": "POST",
+          "Type": "AWS_PROXY",
+          "Uri": {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":apigateway:",
+                {
+                  "Ref": "AWS::Region"
+                },
+                ":lambda:path/2015-03-31/functions/",
+                {
+                  "Fn::GetAtt": [
+                    "LambdaD247545B",
+                    "Arn"
+                  ]
+                },
+                "/invocations"
+              ]
+            ]
+          }
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "NeptuneCypherGqlStack/api/Default/ANY/Resource"
+      }
+    },
+    "CDKMetadata": {
+      "Type": "AWS::CDK::Metadata",
+      "Properties": {
+        "Analytics": "v2:deflate64:H4sIAAAAAAAA/31RQU7DMBB8S++uSwoSHGkSgSqBiFLUu+sswW1iR951SxTl79hOaXvi5Nnxrsczm/Bk+cjvZs/ihHNZHRaDNBb4sCEhD6wENM5KYCtEIM/VStcsMxrJOkks+9KFsKIFAhuKD0edi/Rl0mPfXylSRo8sqAwgl3zYdjLcbYuMFVYdBcHG7TTE4SsqjSP4FLsGrvyV878yUonwNNuAdFZR/2qN62Lzv8Ra1xYQR6ahI6e9Y9+Rp5PCZSRPs8bh2Vyerr1voSWMrBHtrhJ8eHFaRnl/f4sLsK1CjJ6VaPlQmslCOEeG93MREkUeg/U1T508AKUCgYlO1T6Pk+j58BaFfJq06tQ52D+4ktI4TSyHrjF9CzpGdlOFhU3BRfC3kyhSWPPT327pgt+Bvk0VqAmNo0/JVMD3uDgmDzx54slsj0rNrVdXLfByOn8BqcZJOUwCAAA="
+      },
+      "Metadata": {
+        "aws:cdk:path": "NeptuneCypherGqlStack/CDKMetadata/Default"
+      },
+      "Condition": "CDKMetadataAvailable"
+    }
+  },
+  "Parameters": {
+    "AssetParameters052f399fa77385d10e43b917baaf7ee3fa8d01fb2f9800314a506923fe35d56bS3Bucket43067A99": {
+      "Type": "String",
+      "Description": "S3 bucket for asset \"052f399fa77385d10e43b917baaf7ee3fa8d01fb2f9800314a506923fe35d56b\""
+    },
+    "AssetParameters052f399fa77385d10e43b917baaf7ee3fa8d01fb2f9800314a506923fe35d56bS3VersionKeyE006DE8E": {
+      "Type": "String",
+      "Description": "S3 key for asset version \"052f399fa77385d10e43b917baaf7ee3fa8d01fb2f9800314a506923fe35d56b\""
+    },
+    "AssetParameters052f399fa77385d10e43b917baaf7ee3fa8d01fb2f9800314a506923fe35d56bArtifactHash7E70C7C5": {
+      "Type": "String",
+      "Description": "Artifact hash for asset \"052f399fa77385d10e43b917baaf7ee3fa8d01fb2f9800314a506923fe35d56b\""
+    }
+  },
+  "Outputs": {
+    "NeptuneEndpoint": {
+      "Value": {
+        "Fn::GetAtt": [
+          "MyCluster",
+          "Endpoint"
+        ]
+      }
+    },
+    "apiEndpoint9349E63C": {
+      "Value": {
+        "Fn::Join": [
+          "",
+          [
+            "https://",
+            {
+              "Ref": "apiC8550315"
+            },
+            ".execute-api.",
+            {
+              "Ref": "AWS::Region"
+            },
+            ".",
+            {
+              "Ref": "AWS::URLSuffix"
+            },
+            "/",
+            {
+              "Ref": "apiDeploymentStageprod896C8101"
+            },
+            "/"
+          ]
+        ]
+      }
+    }
+  },
+  "Conditions": {
+    "CDKMetadataAvailable": {
+      "Fn::Or": [
+        {
+          "Fn::Or": [
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "af-south-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "ap-east-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "ap-northeast-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "ap-northeast-2"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "ap-south-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "ap-southeast-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "ap-southeast-2"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "ca-central-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "cn-north-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "cn-northwest-1"
+              ]
+            }
+          ]
+        },
+        {
+          "Fn::Or": [
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "eu-central-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "eu-north-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "eu-south-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "eu-west-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "eu-west-2"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "eu-west-3"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "me-south-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "sa-east-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "us-east-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "us-east-2"
+              ]
+            }
+          ]
+        },
+        {
+          "Fn::Or": [
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "us-west-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "us-west-2"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

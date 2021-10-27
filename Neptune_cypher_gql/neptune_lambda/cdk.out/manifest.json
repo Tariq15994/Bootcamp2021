@@ -1,0 +1,1019 @@
+{
+  "version": "14.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "NeptuneCypherGqlStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "NeptuneCypherGqlStack.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/NeptuneCypherGqlStack": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.052f399fa77385d10e43b917baaf7ee3fa8d01fb2f9800314a506923fe35d56b",
+              "id": "052f399fa77385d10e43b917baaf7ee3fa8d01fb2f9800314a506923fe35d56b",
+              "packaging": "zip",
+              "sourceHash": "052f399fa77385d10e43b917baaf7ee3fa8d01fb2f9800314a506923fe35d56b",
+              "s3BucketParameter": "AssetParameters052f399fa77385d10e43b917baaf7ee3fa8d01fb2f9800314a506923fe35d56bS3Bucket43067A99",
+              "s3KeyParameter": "AssetParameters052f399fa77385d10e43b917baaf7ee3fa8d01fb2f9800314a506923fe35d56bS3VersionKeyE006DE8E",
+              "artifactHashParameter": "AssetParameters052f399fa77385d10e43b917baaf7ee3fa8d01fb2f9800314a506923fe35d56bArtifactHash7E70C7C5"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/core/lib/construct-compat.ts:252:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:161:23)",
+              "LegacyStackSynthesizer.addFileAsset (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "NeptuneCypherGqlStack.addFileAsset (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+              "new Function (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-lambda/lib/function.ts:338:29)",
+              "new NeptuneCypherGqlStack (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/lib/neptune_cypher_gql-stack.ts:59:21)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/bin/neptune_cypher_gql.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/NeptuneCypherGqlStack/Vpc/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc8378EB38",
+            "trace": [
+              "new Vpc (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:741:21)",
+              "new NeptuneCypherGqlStack (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/lib/neptune_cypher_gql-stack.ts:12:17)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/bin/neptune_cypher_gql.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/NeptuneCypherGqlStack/Vpc/IngressSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcIngressSubnet1SubnetBB860652",
+            "trace": [
+              "new Subnet (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1028:20)",
+              "new PrivateSubnet (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1216:5)",
+              "/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:923:34",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:895:28)",
+              "Vpc.createSubnets (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:884:12)",
+              "new Vpc (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:770:10)",
+              "new NeptuneCypherGqlStack (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/lib/neptune_cypher_gql-stack.ts:12:17)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/bin/neptune_cypher_gql.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/NeptuneCypherGqlStack/Vpc/IngressSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcIngressSubnet1RouteTable4A2F04D4",
+            "trace": [
+              "new Subnet (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1046:19)",
+              "new PrivateSubnet (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1216:5)",
+              "/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:923:34",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:895:28)",
+              "Vpc.createSubnets (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:884:12)",
+              "new Vpc (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:770:10)",
+              "new NeptuneCypherGqlStack (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/lib/neptune_cypher_gql-stack.ts:12:17)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/bin/neptune_cypher_gql.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/NeptuneCypherGqlStack/Vpc/IngressSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcIngressSubnet1RouteTableAssociationB783F1CD",
+            "trace": [
+              "new Subnet (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1052:5)",
+              "new PrivateSubnet (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1216:5)",
+              "/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:923:34",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:895:28)",
+              "Vpc.createSubnets (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:884:12)",
+              "new Vpc (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:770:10)",
+              "new NeptuneCypherGqlStack (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/lib/neptune_cypher_gql-stack.ts:12:17)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/bin/neptune_cypher_gql.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/NeptuneCypherGqlStack/Vpc/IngressSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcIngressSubnet2Subnet0EF3AA18",
+            "trace": [
+              "new Subnet (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1028:20)",
+              "new PrivateSubnet (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1216:5)",
+              "/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:923:34",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:895:28)",
+              "Vpc.createSubnets (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:884:12)",
+              "new Vpc (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:770:10)",
+              "new NeptuneCypherGqlStack (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/lib/neptune_cypher_gql-stack.ts:12:17)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/bin/neptune_cypher_gql.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/NeptuneCypherGqlStack/Vpc/IngressSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcIngressSubnet2RouteTableF8479FEF",
+            "trace": [
+              "new Subnet (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1046:19)",
+              "new PrivateSubnet (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1216:5)",
+              "/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:923:34",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:895:28)",
+              "Vpc.createSubnets (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:884:12)",
+              "new Vpc (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:770:10)",
+              "new NeptuneCypherGqlStack (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/lib/neptune_cypher_gql-stack.ts:12:17)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/bin/neptune_cypher_gql.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/NeptuneCypherGqlStack/Vpc/IngressSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcIngressSubnet2RouteTableAssociationC780BF1D",
+            "trace": [
+              "new Subnet (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1052:5)",
+              "new PrivateSubnet (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1216:5)",
+              "/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:923:34",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:895:28)",
+              "Vpc.createSubnets (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:884:12)",
+              "new Vpc (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:770:10)",
+              "new NeptuneCypherGqlStack (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/lib/neptune_cypher_gql-stack.ts:12:17)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/bin/neptune_cypher_gql.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/NeptuneCypherGqlStack/mySecurityGroup1/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mySecurityGroup10F5D9342",
+            "trace": [
+              "new SecurityGroup (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:289:26)",
+              "new NeptuneCypherGqlStack (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/lib/neptune_cypher_gql-stack.ts:23:17)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/bin/neptune_cypher_gql.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/NeptuneCypherGqlStack/mySecurityGroup1/from NeptuneCypherGqlStackmySecurityGroup1E8BE4662:8182": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mySecurityGroup1fromNeptuneCypherGqlStackmySecurityGroup1E8BE46628182EC887023",
+            "trace": [
+              "SecurityGroup.addIngressRule (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:65:7)",
+              "SecurityGroup.addIngressRule (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:306:13)",
+              "new NeptuneCypherGqlStack (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/lib/neptune_cypher_gql-stack.ts:32:9)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/bin/neptune_cypher_gql.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/NeptuneCypherGqlStack/neptuneSubnetGroup": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "neptuneSubnetGroup",
+            "trace": [
+              "new NeptuneCypherGqlStack (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/lib/neptune_cypher_gql-stack.ts:34:27)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/bin/neptune_cypher_gql.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/NeptuneCypherGqlStack/MyCluster": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyCluster",
+            "trace": [
+              "new NeptuneCypherGqlStack (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/lib/neptune_cypher_gql-stack.ts:42:28)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/bin/neptune_cypher_gql.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/NeptuneCypherGqlStack/myinstance": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "myinstance",
+            "trace": [
+              "new NeptuneCypherGqlStack (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/lib/neptune_cypher_gql-stack.ts:50:29)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/bin/neptune_cypher_gql.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/NeptuneCypherGqlStack/Lambda/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaServiceRoleA8ED4D3B",
+            "trace": [
+              "new Role (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-iam/lib/role.ts:199:18)",
+              "new Function (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-lambda/lib/function.ts:318:31)",
+              "new NeptuneCypherGqlStack (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/lib/neptune_cypher_gql-stack.ts:59:21)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/bin/neptune_cypher_gql.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/NeptuneCypherGqlStack/Lambda/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaD247545B",
+            "trace": [
+              "new Function (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-lambda/lib/function.ts:388:35)",
+              "new NeptuneCypherGqlStack (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/lib/neptune_cypher_gql-stack.ts:59:21)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/bin/neptune_cypher_gql.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/NeptuneCypherGqlStack/AssetParameters/052f399fa77385d10e43b917baaf7ee3fa8d01fb2f9800314a506923fe35d56b/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters052f399fa77385d10e43b917baaf7ee3fa8d01fb2f9800314a506923fe35d56bS3Bucket43067A99",
+            "trace": [
+              "new FileAssetParameters (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "NeptuneCypherGqlStack.addFileAsset (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+              "new Function (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-lambda/lib/function.ts:338:29)",
+              "new NeptuneCypherGqlStack (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/lib/neptune_cypher_gql-stack.ts:59:21)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/bin/neptune_cypher_gql.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/NeptuneCypherGqlStack/AssetParameters/052f399fa77385d10e43b917baaf7ee3fa8d01fb2f9800314a506923fe35d56b/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters052f399fa77385d10e43b917baaf7ee3fa8d01fb2f9800314a506923fe35d56bS3VersionKeyE006DE8E",
+            "trace": [
+              "new FileAssetParameters (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "NeptuneCypherGqlStack.addFileAsset (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+              "new Function (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-lambda/lib/function.ts:338:29)",
+              "new NeptuneCypherGqlStack (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/lib/neptune_cypher_gql-stack.ts:59:21)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/bin/neptune_cypher_gql.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/NeptuneCypherGqlStack/AssetParameters/052f399fa77385d10e43b917baaf7ee3fa8d01fb2f9800314a506923fe35d56b/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters052f399fa77385d10e43b917baaf7ee3fa8d01fb2f9800314a506923fe35d56bArtifactHash7E70C7C5",
+            "trace": [
+              "new FileAssetParameters (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "NeptuneCypherGqlStack.addFileAsset (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "AssetCode.bind (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-lambda/lib/code.ts:183:20)",
+              "new Function (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-lambda/lib/function.ts:338:29)",
+              "new NeptuneCypherGqlStack (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/lib/neptune_cypher_gql-stack.ts:59:21)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/bin/neptune_cypher_gql.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/NeptuneCypherGqlStack/Neptune Endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "NeptuneEndpoint",
+            "trace": [
+              "new NeptuneCypherGqlStack (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/lib/neptune_cypher_gql-stack.ts:72:5)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/bin/neptune_cypher_gql.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/NeptuneCypherGqlStack/api/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiC8550315",
+            "trace": [
+              "new RestApi (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:463:22)",
+              "new LambdaRestApi (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:26:5)",
+              "new NeptuneCypherGqlStack (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/lib/neptune_cypher_gql-stack.ts:78:25)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/bin/neptune_cypher_gql.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/NeptuneCypherGqlStack/api/CloudWatchRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiCloudWatchRoleAC81D93E",
+            "trace": [
+              "new Role (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-iam/lib/role.ts:199:18)",
+              "LambdaRestApi._configureCloudWatchRole (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:289:18)",
+              "new RestApi (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:481:12)",
+              "new LambdaRestApi (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:26:5)",
+              "new NeptuneCypherGqlStack (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/lib/neptune_cypher_gql-stack.ts:78:25)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/bin/neptune_cypher_gql.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/NeptuneCypherGqlStack/api/Account": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiAccount57E28B43",
+            "trace": [
+              "LambdaRestApi._configureCloudWatchRole (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:294:22)",
+              "new RestApi (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:481:12)",
+              "new LambdaRestApi (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:26:5)",
+              "new NeptuneCypherGqlStack (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/lib/neptune_cypher_gql-stack.ts:78:25)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/bin/neptune_cypher_gql.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/NeptuneCypherGqlStack/api/Deployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiDeployment149F129476687e3593717387642ac8c19d70e9db",
+            "trace": [
+              "new Deployment (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/deployment.ts:34:21)",
+              "LambdaRestApi._configureDeployment (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:318:32)",
+              "new RestApi (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:484:10)",
+              "new LambdaRestApi (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:26:5)",
+              "new NeptuneCypherGqlStack (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/lib/neptune_cypher_gql-stack.ts:78:25)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/bin/neptune_cypher_gql.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/NeptuneCypherGqlStack/api/DeploymentStage.prod/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiDeploymentStageprod896C8101",
+            "trace": [
+              "new Stage (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/stage.ts:136:22)",
+              "LambdaRestApi._configureDeployment (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:328:30)",
+              "new RestApi (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:484:10)",
+              "new LambdaRestApi (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:26:5)",
+              "new NeptuneCypherGqlStack (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/lib/neptune_cypher_gql-stack.ts:78:25)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/bin/neptune_cypher_gql.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/NeptuneCypherGqlStack/api/Endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiEndpoint9349E63C",
+            "trace": [
+              "LambdaRestApi._configureDeployment (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:333:7)",
+              "new RestApi (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:484:10)",
+              "new LambdaRestApi (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:26:5)",
+              "new NeptuneCypherGqlStack (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/lib/neptune_cypher_gql-stack.ts:78:25)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/bin/neptune_cypher_gql.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/NeptuneCypherGqlStack/api/Default/{proxy+}/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiproxy4EA44110",
+            "trace": [
+              "new Resource (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:342:22)",
+              "new ProxyResource (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:397:5)",
+              "RootResource.addProxy (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:99:12)",
+              "new LambdaRestApi (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:33:17)",
+              "new NeptuneCypherGqlStack (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/lib/neptune_cypher_gql-stack.ts:78:25)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/bin/neptune_cypher_gql.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/NeptuneCypherGqlStack/api/Default/{proxy+}/ANY/ApiPermission.NeptuneCypherGqlStackapi6429C549.ANY..{proxy+}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiproxyANYApiPermissionNeptuneCypherGqlStackapi6429C549ANYproxy4EA572B3",
+            "trace": [
+              "Function.addPermission (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:130:5)",
+              "LambdaIntegration.bind (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:41:18)",
+              "new Method (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:98:36)",
+              "ProxyResource.addMethod (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "ProxyResource.addMethod (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:419:18)",
+              "new ProxyResource (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:406:29)",
+              "RootResource.addProxy (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:99:12)",
+              "new LambdaRestApi (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:33:17)",
+              "new NeptuneCypherGqlStack (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/lib/neptune_cypher_gql-stack.ts:78:25)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/bin/neptune_cypher_gql.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/NeptuneCypherGqlStack/api/Default/{proxy+}/ANY/ApiPermission.Test.NeptuneCypherGqlStackapi6429C549.ANY..{proxy+}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiproxyANYApiPermissionTestNeptuneCypherGqlStackapi6429C549ANYproxyE3FC74E9",
+            "trace": [
+              "Function.addPermission (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:130:5)",
+              "LambdaIntegration.bind (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:49:20)",
+              "new Method (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:98:36)",
+              "ProxyResource.addMethod (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "ProxyResource.addMethod (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:419:18)",
+              "new ProxyResource (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:406:29)",
+              "RootResource.addProxy (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:99:12)",
+              "new LambdaRestApi (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:33:17)",
+              "new NeptuneCypherGqlStack (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/lib/neptune_cypher_gql-stack.ts:78:25)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/bin/neptune_cypher_gql.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/NeptuneCypherGqlStack/api/Default/{proxy+}/ANY/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiproxyANY7F13F09C",
+            "trace": [
+              "new Method (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:116:22)",
+              "ProxyResource.addMethod (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "ProxyResource.addMethod (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:419:18)",
+              "new ProxyResource (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:406:29)",
+              "RootResource.addProxy (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:99:12)",
+              "new LambdaRestApi (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:33:17)",
+              "new NeptuneCypherGqlStack (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/lib/neptune_cypher_gql-stack.ts:78:25)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/bin/neptune_cypher_gql.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/NeptuneCypherGqlStack/api/Default/ANY/ApiPermission.NeptuneCypherGqlStackapi6429C549.ANY..": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiANYApiPermissionNeptuneCypherGqlStackapi6429C549ANY09D304DB",
+            "trace": [
+              "Function.addPermission (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:130:5)",
+              "LambdaIntegration.bind (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:41:18)",
+              "new Method (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:98:36)",
+              "RootResource.addMethod (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "ProxyResource.addMethod (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:416:29)",
+              "new ProxyResource (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:406:29)",
+              "RootResource.addProxy (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:99:12)",
+              "new LambdaRestApi (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:33:17)",
+              "new NeptuneCypherGqlStack (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/lib/neptune_cypher_gql-stack.ts:78:25)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/bin/neptune_cypher_gql.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/NeptuneCypherGqlStack/api/Default/ANY/ApiPermission.Test.NeptuneCypherGqlStackapi6429C549.ANY..": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiANYApiPermissionTestNeptuneCypherGqlStackapi6429C549ANYF3CAA0B8",
+            "trace": [
+              "Function.addPermission (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:130:5)",
+              "LambdaIntegration.bind (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:49:20)",
+              "new Method (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:98:36)",
+              "RootResource.addMethod (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "ProxyResource.addMethod (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:416:29)",
+              "new ProxyResource (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:406:29)",
+              "RootResource.addProxy (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:99:12)",
+              "new LambdaRestApi (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:33:17)",
+              "new NeptuneCypherGqlStack (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/lib/neptune_cypher_gql-stack.ts:78:25)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/bin/neptune_cypher_gql.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/NeptuneCypherGqlStack/api/Default/ANY/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "apiANYB3DF8C3C",
+            "trace": [
+              "new Method (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:116:22)",
+              "RootResource.addMethod (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:95:12)",
+              "ProxyResource.addMethod (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:416:29)",
+              "new ProxyResource (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:406:29)",
+              "RootResource.addProxy (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:99:12)",
+              "new LambdaRestApi (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:33:17)",
+              "new NeptuneCypherGqlStack (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/lib/neptune_cypher_gql-stack.ts:78:25)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/bin/neptune_cypher_gql.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "/usr/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/NeptuneCypherGqlStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+              "Object.onceWrapper (events.js:520:26)",
+              "process.emit (events.js:400:28)",
+              "process.emit (domain.js:475:12)",
+              "process.emit (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/source-map-support/source-map-support.js:516:21)"
+            ]
+          }
+        ],
+        "/NeptuneCypherGqlStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:31:27)",
+              "/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+              "Object.onceWrapper (events.js:520:26)",
+              "process.emit (events.js:400:28)",
+              "process.emit (domain.js:475:12)",
+              "process.emit (/home/tariq/Documents/GitHub/Neptune_cypher_gql/neptune_lambda/node_modules/source-map-support/source-map-support.js:516:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "NeptuneCypherGqlStack"
+    }
+  }
+}
